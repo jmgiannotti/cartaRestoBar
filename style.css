@@ -1,117 +1,141 @@
-body{
-
-  background: rgb(229, 239, 193);
-
-  color: green;
-
-  font-size: 25px;
-
-  font-family: Anton;
-
+.titulo {
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    color: #17202A;
+    background-color: #F4F6F6;
+    font-weight: bold;
+    font-size: 100px;
+    border: black;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 320px;
 }
 
-h1{
-
-  font-family: Roboto Mono;
-
-  color: red;
-
-  font-weight: lighter;
-
-  font-size: 10px;
-
+.cuadradito {
+    background-color: moccasin;
+    font-size: 20px;
+    text-align: center;
+    border: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    transition: 0.25s;
 }
 
-h2 {
-
-  font-family: Roboto Mono;
-
-  color: pink;
-
-  font-weight: lighter;
-
-  font-size: 8px;
-
+.cuadradito:hover{
+  background-color: moccasin;
+  background-size:  100% 100%;
+  transform:scale(1.10,1.10);
+  transform-origin:center;
 }
 
-a {
-
-  color: darkgreen;
-
+.container {
+    border-collapse: separate;
+    border-spacing: 3px;
+    align-items: center;
+    position: relative;
+    left: 315px;
+    top: 25px;
 }
 
-a:hover {
-
-  text-decoration: none;
-
-  color: purple;
-
+p {
+    text-align: center;
 }
 
-#banner{
-
+ h1{
   text-align: center;
 
-  background-image: url("https://unsplash.it/1300/600?random");
+ }
 
-  background-size: cover;
 
-  padding: 150px;
 
-  color: white;
 
-  text-shadow: 1px 1px 5px black;
+
+#footer {
+    margin: 0;
+    font-size: 1.2em;
+    padding: 5px 5px 15px 10px;
+    position: relative;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 0.35em;
+    border-bottom-right-radius: 0.35em;
+    border-top: 1px solid #AAAAAA;
+    background-color:moccasin;
+}
+
+#footer a{
+    float: right;
+  padding-left: 45px;
+  text-align:center;
+}
+.barraLateral {
+    list-style-type: none;
+    margin: -1px;
+    padding: 11px;
+    height: -webkit-fill-available;
+    width: 150px;
+    background-color: #f1f1f1;
+    border: 4px;
+    border-style: solid;
+    border-color: #006e44;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+
+    li a:hover {
+        background-color: #773B09;
+        color: #F4F6F6;
+    }
+
+.contenedorMayor{
+
+  display: inline-flex;
+}
+
+.miniMenu {
+    height: 202px;
+    border: 5px ridge #e9310e;
+    background-clip: border-box;
+}
+
+.imagencomida {
+    width: 245px;
+    padding-bottom: 0px;
+}
+
+.header {
+padding-top: 20px;
+position: relative;
+
 
 }
 
-#banner h1 {
-
-  color: white;
-
-  font-size: 50px;
-
+#logoIzquierdo {
+    float: left;
+    width: 110px;
+    height: auto;
 }
 
-#banner p {
-
-  color: white;
-
-  opacity: 0.8;
-
-  font-size: 30px;
-
-  font-weight: lighter;
+#logoDerecho {
+    float: right;
+    width: 110px;
+    height: auto;
+}
+.firma{
+    float:left;
+    margin: auto;
 
 }
-
-#footer{
-
-  padding: 30px;
-
-  background: rgb(30, 30, 30);
-
-  color: lightgrey;
-
-}
-
-#footer a {
-
-  color: lightgrey;
-
-  font-size: 25px;
-
-}
-
-#footer a:hover {
-
-  color: white;
-
-}
-
-.tarjeta{
-
-  padding: 50px;
-
-  font-weight: lighter;
-
+.descripcion {
+    font-size: 14px;
+    font-style: oblique;
+    margin-top: -15px;
 }
