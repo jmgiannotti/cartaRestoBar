@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <script src="Script.js" >
+
+    </script>
+
+</head>
+
+
+<body background="fondo.jpg" class="principal">
+
+
+
+    <h2 class="titulo">  <img id="logoIzquierdo" src="parolacciaLogoderecho.png" /> <img id="logoDerecho" src="parolacciaLogo.png" /> El Bar de Juan y Alan</h2>
+
+    <h1 class="subtitulo">Reservas </h1>
+
+
+    <div class="contenedorMayor">
+        <div class="miniMenu">
+            <ul class="barraLateral">
+
+                <li><a href="index.html" class="btn btn-block">Comidas</a></li>
+                <li><a class="btn btn-block">Bebidas</a></li>
+                <li><a href="postres.html" class="btn btn-block">Postres</a></li>
+                <li><a href="reservas.html" class="btn btn-block">RESERVAS</a></li>
+                <li><a class="btn btn-block">Contacto</a></li>
+
+
+            </ul>
+        </div>
+
+
+
+        <div class="containerformulario">
+
+                <form id="formulariocontenedor" action="action_page.php">
+                    <fieldset>
+                        <legend>Ingrese sus datos:</legend>
+                        
+
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+
+                        <br><br>
+
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+
+                        <br><br>
+
+                        <label style="padding-left: 0px" for="mincom">Cantidad de comensales</label>
+                        <input type="number" name="mincom" placeholder="1" min="1" max="20">
+
+                        <br><br>
+
+                        <label for="fechareserva">Fecha</label>
+                        <input type="date" name="fechareserva" min="13-04-2022" max="04-12-2023">
+
+                        <br><br>
+
+                        <label for="confirmacion"> He leído las condiciones y acepto las mismas   </label>
+                        <input type="checkbox" name="confirmacion" id="cuadradito" onclick= elementoChequeado() >
+                        <img id="plumita" src="pluma.png" style="visibility: hidden; height: 20px; width:auto"/>
+
+
+                        <br><br>
+                        <label for="subject">Detalles de la reserva:</label>
+                        <br><br>
+                        <textarea id="subject" name="subject" placeholder="..." rows="15" cols="50"></textarea>
+                        <br><br>
+                        <input type="submit" class="btn btn-default " value="Enviar" onclick="openWin()">
+
+                    </fieldset>
+                </form>
+
+
+            </div>
+        </div>
+
+
+    <div id="footer">
+
+        <p class="firma"> Pagina hecha por Juan y Alan   </p>
+
+
+
+        <a href="#"><i class="fa fa-youtube"></i></a>
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+
+        <a href="#"><i class="fa fa-twitter"></i></a>
+
+        <a href="#"><i class="fa fa-github"></i></a>
+
+
+
+    </div>
+
+
+
+</body>
+</html>
+
+
