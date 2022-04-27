@@ -13,3 +13,12 @@ function openWin() {
     window.open("reserva.html", "Tu reserva", "width = 800, height = 400, left = 200, top = 200 ")
 
 }
+
+function estaBienEscrito(x) {
+    var x = document.getElementById("apellido")
+    if (!isNaN(x)) {
+        alert("Debe ingresar solo letras")
+        
+    }
+
+}

@@ -48,22 +48,22 @@
                         
 
                         <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required oninput="estaBienEscrito()">
 
                         <br><br>
 
                         <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
 
                         <br><br>
 
                         <label style="padding-left: 0px" for="mincom">Cantidad de comensales</label>
-                        <input type="number" name="mincom" placeholder="1" min="1" max="20">
+                        <input type="number" name="mincom" placeholder="1" min="1" max="20" required>
 
                         <br><br>
 
                         <label for="fechareserva">Fecha</label>
-                        <input type="date" name="fechareserva" min="13-04-2022" max="04-12-2023">
+                        <input type="date" name="fechareserva" min="13-04-2022" max="04-12-2023" required>
 
                         <br><br>
 
