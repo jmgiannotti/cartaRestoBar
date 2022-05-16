@@ -16,41 +16,46 @@ function elementoChequeado() {
 
 }
 
-    document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("formulariocontenedor").addEventListener('submit', validarFormulario);
-});
-
-function validarFormulario(evento) {
-    evento.preventDefault();
+function validarFormulario() {
+    
     var c = document.getElementById("cuadradito");
     var apellido = document.getElementById('apellido').value;
     var nombre = document.getElementById('nombre').value;
+
     if (nombre.length == 0) {
         alert('No has escrito nada en el nombre');
-        return;
+        return false;
+
     }
     if (apellido.length == 0) {
         alert('No has escrito nada en el apellido');
-        return;
+        return false;
     }
 
+
+    if (isFinite(nombre) || isFinite(apellido)) {
+        alert('No se permiten numeros');
+        return false;
+
+    }
     if (!c.checked) {
         alert("Debes aceptar las condiciones");
-        return;
+        return false;
     }
 
-    if (!isNaN(nombre) && !isNaN(apellido)) {
-        alert('No se permiten numeros');
-        return;
-    }
+    const valores = {
+        a: apellido,
+        n: nombre
+    };
     this.submit(window.open("reserva.html", "Tu reserva", "width = 800, height = 400, left = 200, top = 200 "));
 }
 
 
 
-function openWin() {
+function pasardatos(valores) {
 
-    
+    document.getElementById("datos") = valores
+
    
 
 }

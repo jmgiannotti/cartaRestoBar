@@ -42,7 +42,7 @@
 
         <div class="containerformulario">
 
-                <form id="formulariocontenedor" >
+                <form id="formulariocontenedor" onsubmit="return validarFormulario()">
                     <fieldset>
                         <legend>Ingrese sus datos:</legend>
                         
@@ -70,14 +70,14 @@
                         <label for="confirmacion"> He leído las condiciones y acepto las mismas </label>
                         <input type="checkbox" name="confirmacion" id="cuadradito" onclick="elementoChequeado()">
                         <img id="plumita" src="pluma.png" style="visibility: hidden; height: 20px; width:auto"/>
-
+                         
 
                         <br><br>
                         <label for="subject">Detalles de la reserva:</label>
                         <br><br>
                         <textarea id="subject" name="subject" placeholder="..." rows="15" cols="50"></textarea>
                         <br><br>
-                        <input type="submit" class="btn btn-default " value="Enviar" onclick="openWin()">
+                        <input type="submit" class="btn btn-default " value="Enviar">
 
                     </fieldset>
                 </form>
